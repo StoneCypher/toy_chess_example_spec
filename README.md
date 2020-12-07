@@ -49,4 +49,46 @@ This system will need:
         1. Star user stuff
         1. Admin stuff
         1. Owner stuff
+1. Ability to play games
+    1. Knows the rules to at least basic chess
+        1. Does it need alternates like FRC or whatever?
+    1. Has a UI for:
+        1. New games
+        1. Making moves
+        1. Saving and restoring games
+    1. PbEM support?
+        1. Specify Live
+        1. Over long time periods
+        1. Allow time limit clock 
+1. Web frontend
+    1. Focus on speed (ideally no lag, no waiting on responses)
+    1. User needs
+        1. Ready for very large screens, average screens, very small (eg phone) screens
+        1. Ready for mouse interaction, keyboard interaction, touch interaction
+        1. Ready for users with major 7 types of colorblindness
+        1. Ready for blind users (wa-aria or some competitor)
+        1. Ability to specify pronouns; good faith to implement those in the UI (this won't be easy)
+1. Internationalization
+    1. Internationalization is a very big deal for this project and must be taken very seriously
+    1. Criteria
+        1. A successful internationalization system is easy for the translator
+        1. A successful internationalization system is comparatively low maintenance
+        1. A successful internationalization system is easy for the developer
+    1. Must handle
+        1. Strings with inclusions
+        1. Names (John Haugeland vs JOHN Haugeland vs Haugeland JOHN vs J.Haugeland per culture)
+            1. The ability to write your name in another language 
+            1. Fang's name should be in Chinese for first-Chinese speakers and English where else appropriate; etc
+            1. Sort by reader's preference order
+        1. Numbers (omg crore)
+        1. Ordinals, esp. ranking ordinals (5th vs 3rd)
+        1. Gendering of in-game words (boards are male in Russian and female in Turkish)
+        1. Punycode
+        1. Ability to record your own name for other people to listen to from your profile (this is so nice at work)
+        1. Times and dates both with and without time zones; also unix microtime
+    1. Must offer
+        1. Some or another straightforward mechanism for translators (upload json?  web ui?  proz?  whatever, but, something)
+        1. A clear tutorial for translators on getting a flat string, then a formatted string, into place, start to finish
+            1. This tutorial must be kept up to date!  Fortunately this seems likely to never change
+        1. A zero or near-zero effort mechanism for developers to update a language build (maybe just a CI action or something?)
         

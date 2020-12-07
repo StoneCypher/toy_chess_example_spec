@@ -36,3 +36,17 @@ Because the goal is to define the scope of the work, most of the attention that 
 
 This system will need:
 
+1. Identity
+    1. Login
+        1. Login with email
+        1. Login with credential (app, etc)
+        1. Login with social (facebook, etc)
+        1. Recover login
+        1. Logout
+    1. Authorization
+        1. Non-id user stuff
+        1. User stuff
+        1. Star user stuff
+        1. Admin stuff
+        1. Owner stuff
+        

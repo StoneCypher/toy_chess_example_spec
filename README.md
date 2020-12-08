@@ -206,6 +206,8 @@ This system will need:
         1. This drags all celebs towards us, lets us be the galactic core
     1. Let people continue to use their preferred client with us
         1. Do some MSCC style embedding to let active content be safe for ext clients, but still make our client do more modern schtupf
+    1. Expose everything over API; dogfood it and build the HTTP client exclusively that way
+    1. Probably just a fetch-and-json setup?  Keep it simple, stupid
 1. Set up a video mux
     1. Use WebRTC so we don't have to horf bandwidth
     1. Stream tourneys through the Tube of Yous

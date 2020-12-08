@@ -74,12 +74,26 @@ This system will need:
             1. Yours
             1. Tournaments
             1. Famous games
+        1. Chat within games
+        1. Observers (off by default)
+            1. Important for tournaments, rank matches, title challenges, etc
+            1. Magnus Carlsen type shit
+            1. Players have to explicitly enable it
+            1. Possibly a streaming interface?  Unclear if warranted
     1. PbEM support?
         1. Specify Live
         1. Over long time periods
         1. Allow time limit clock 
     1. Can export to standard chess notations like FEN+
     1. Can play multiple concurrent games
+    1. Export history to JSON for external tooling
+    1. Export match to YouTube
+        1. With/without chat
+        1. With/without time compression
+        1. With/without move grid
+        1. With/without functional commentary
+        1. Everything branded to drive funnel back to us
+    1. Charts and graphs
     1. Clocks
         1. Game clock
         1. Move clock
@@ -97,6 +111,13 @@ This system will need:
             1. This would be explored in a real spec but I don't know chess well enough
         1. Team games
             1. This would be explored in a real spec but I don't know chess well enough
+1. ***Achievement system***
+    1. This will actually be such a big deal
+    1. Geek code badge signature, MD embeddable
+1. Purchases
+    1. $2/mo "supporter" badge
+    1. Buy an alternate chess set or board or whatever that you can use
+    1. Badges to give to other people, like reddit gold
 1. Has a teaching mode
     1. Lockdown UI that forces specific moves
         1. Also needs explanatory dialog boxes
@@ -114,6 +135,7 @@ This system will need:
     1. Opening game puzzles
     1. Tactical weighting
     1. Classical studies
+    1. Youtube versions of all tutorial content as an onboarding funnel
 1. Web frontend
     1. Focus on speed (ideally no lag, no waiting on responses)
     1. User needs

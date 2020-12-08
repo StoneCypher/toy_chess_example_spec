@@ -45,21 +45,75 @@ This system will need:
         1. Logout
     1. Authorization
         1. Non-id user stuff
+            1. Everything in site meta below
         1. User stuff
+            1. My public profile (Public nickname, photo, on/off show your rank, etc)
+            1. My private profile (Do I want to be told about tourneys?  Do I block this person? etc)
+            1. Preferences (language, timezone, etc)
         1. Star user stuff
+            1. These are not staff, but recognized users who help org the community
+            1. They get abusive comment removal rights, censure rights, etc
         1. Admin stuff
+            1. CRUD, event fab, ban, pass reset, etc
         1. Owner stuff
+            1. Promote/demote user
+            1. Every nuclear button
 1. Ability to play games
     1. Knows the rules to at least basic chess
+        1. Can refuse illegal moves
+        1. Knows when a game is over
         1. Does it need alternates like FRC or whatever?
     1. Has a UI for:
         1. New games
         1. Making moves
+            1. Reversing moves
+            1. Looking at move history
+        1. Concede
         1. Saving and restoring games
+        1. Viewing historic games
+            1. Yours
+            1. Tournaments
+            1. Famous games
     1. PbEM support?
         1. Specify Live
         1. Over long time periods
         1. Allow time limit clock 
+    1. Can export to standard chess notations like FEN+
+    1. Can play multiple concurrent games
+    1. Clocks
+        1. Game clock
+        1. Move clock
+        1. Revert clock
+    1. Rankings
+        1. Exposition games
+        1. Ladder games
+            1. How does SLO get measured
+            1. External lockstep with FISA, etc
+        1. Ranked games
+            1. How does SLO get measured
+        1. Tournament games
+            1. This would be explored in a real spec but I don't know chess well enough
+        1. Title games
+            1. This would be explored in a real spec but I don't know chess well enough
+        1. Team games
+            1. This would be explored in a real spec but I don't know chess well enough
+1. Has a teaching mode
+    1. Lockdown UI that forces specific moves
+        1. Also needs explanatory dialog boxes
+        1. Backup is a special case of undo
+    1. Tutorials to get through the basic game
+        1. Each piece in moves
+        1. Pawn promotion
+            1. Holy shit is that two queens?
+        1. Castling
+        1. En passant
+        1. Deadlock draw
+        1. 50-move rule
+        1. Three-repeats rule
+    1. Endgame puzzles
+    1. Opening game puzzles
+    1. Tactical weighting
+    1. Classical studies
 1. Web frontend
     1. Focus on speed (ideally no lag, no waiting on responses)
     1. User needs
@@ -68,8 +122,39 @@ This system will need:
         1. Ready for users with major 7 types of colorblindness
         1. Ready for blind users (wa-aria or some competitor)
         1. Ability to specify pronouns; good faith to implement those in the UI (this won't be easy)
+    1. No loads to do things (AJAX or XML islands or websockets or whatever instead)
+    1. Ready for computers
+        1. Mouse controls
+        1. Keyboard controls
+        1. Large screen
+        1. Small screen
+    1. Ready for phones
+        1. Touch controls
+    1. Ready for tablets
+    1. Ready for consoles
+        1. D-Pad controller controls
+    1. Ready for special-needs control rigs
+1. Site meta
+    1. Landing page
+    1. Intro page
+    1. Rules page
+    1. Login hotpath
+    1. Game world status
+        1. Public ladder
+        1. Upcoming / current tournaments
+        1. Events
+    1. Outreach pages
+        1. For Schools
+        1. For Organizations
+        1. For Governments
+    1. Pricing
+    1. Legal, ToS, disclaimers, COPA/COPPA, other site bs
+        1. Ask a suit to sign off
 1. Internationalization
-    1. Internationalization is a very big deal for this project and must be taken very seriously
+    1. Internationalization is a ***very big deal*** for this project and must be taken very seriously
+        1. Bulk populations are English speaking, Russian, French, Japanese, German, Portuguese, Polish, Korean
+        1. Good god what a complex technical spread for linguistics, though
+        1. Getting sir/ma'am right is a good idea here; these people think they're royalty
     1. Criteria
         1. A successful internationalization system is easy for the translator
         1. A successful internationalization system is comparatively low maintenance

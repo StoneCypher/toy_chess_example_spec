@@ -198,4 +198,17 @@ This system will need:
         1. A clear tutorial for translators on getting a flat string, then a formatted string, into place, start to finish
             1. This tutorial must be kept up to date!  Fortunately this seems likely to never change
         1. A zero or near-zero effort mechanism for developers to update a language build (maybe just a CI action or something?)
-        
+1. API
+    1. Make several API ghosts to imitate existing APIs to help existing clients onboard
+    1. Eat the existing backends by being the rosetta
+    1. Reach out to chess celebrities and allow them the opportunity to re-establish their name for free by donating tutorials
+        1. Let people buy merch from them; skim it and let them have the bulk of delta
+        1. This drags all celebs towards us, lets us be the galactic core
+    1. Let people continue to use their preferred client with us
+        1. Do some MSCC style embedding to let active content be safe for ext clients, but still make our client do more modern schtupf
+1. Set up a video mux
+    1. Use WebRTC so we don't have to horf bandwidth
+    1. Stream tourneys through the Tube of Yous
+    1. Establish a TUN and a TURN server to do cross-latch
+    1. Pow: now you've got video chat, and people can stay in touch while chess-ing
+    1. Now you can chess with Dustin Diamond and actually screech Screech! at Screech
